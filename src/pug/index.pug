@@ -21,7 +21,8 @@ body
       .banner
         h1 Welcome to STARTUP
         p Your Favourite Creative Agency Template
-        .button GET STARTED 
+        .button 
+          a(href="#") GET STARTED 
   
   .services
     .container
@@ -53,15 +54,15 @@ body
         .line
         p We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
       .middle-text-wrapper
-        .middle-text-one
+        .middle-text.tx-one
           p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.
-        .middle-text-two
+        .middle-text.tx-two
           p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Loreipsum dolor sit amet. Lorem ipsum dolor et.
       .carousel
 
   .latest-works
     .container
-      .top-text
+      .top-text.top-text-modified
         h3 LATEST WORKS
         .line
         .list-wrapper
@@ -77,25 +78,87 @@ body
             a(href="#") Strategy
       
       .grid-wrapper
-            .container
-              .grid-item-1
-                img(src="", alt="")
-              .grid-item-2
-                img(src="", alt="")
-              .grid-item-3
-                img(src="", alt="")
-              .grid-item-4
-                img(src="", alt="")
-              .grid-item-5
-                img(src="", alt="")
-              .grid-item-6
-                img(src="", alt="")
-              .grid-item-7
-                img(src="", alt="")
-              .grid-item-8
-                img(src="", alt="")
-              .grid-item-9
-                img(src="", alt="")
+        .grid-item.gr-1
+          img(src="img/latest-works1.jpg", alt="hair dresser")
+          .grid-overlay
+            .grid-overlay-text-block
+              h6 Hair Dresser
+              p Branding
+              .button
+                a(href="#") VIEW
+                i.far.fa-chevron-right
+        .grid-item.gr-2
+          img(src="img/latest-works2.jpg", alt="bird")
+          .grid-overlay
+            .grid-overlay-text-block
+              h6 Tax Manager
+              p Strategy
+              .button 
+                a(href="#") VIEW
+                i.far.fa-chevron-right
+        .grid-item.gr-3
+          img(src="img/latest-works3.jpg", alt="organized table")
+          .grid-overlay
+            .grid-overlay-text-block
+              h6 Influencer
+              p Development
+              .button
+                a(href="#") VIEW
+                i.far.fa-chevron-right
+        .grid-item.gr-4
+          img(src="img/latest-works4.jpg", alt="camera")
+          .grid-overlay
+            .grid-overlay-text-block
+              h6 Photographer
+              p Design
+              .button
+                a(href="#") VIEW
+                i.far.fa-chevron-right
+        .grid-item.gr-5
+          img(src="img/latest-works5.jpg", alt="bicycle")
+          .grid-overlay
+            .grid-overlay-text-block
+              h6 Mechanic
+              p Strategy
+              .button 
+                a(href="#") VIEW
+                i.far.fa-chevron-right
+        .grid-item.gr-6
+          img(src="img/latest-works6.jpg", alt="journal")
+          .grid-overlay
+            .grid-overlay-text-block
+              h6 Cartoon Animator
+              p Design
+              .button
+                a(href="#") VIEW
+                i.far.fa-chevron-right
+        .grid-item.gr-7
+          img(src="img/latest-works7.jpg", alt="laptop")
+          .grid-overlay
+            .grid-overlay-text-block
+              h6 Personal Coach
+              p Development
+              .button
+                a(href="#") VIEW
+                i.far.fa-chevron-right
+        .grid-item.gr-8
+          img(src="img/latest-works8.jpg", alt="stationery")
+          .grid-overlay
+            .grid-overlay-text-block
+              h6 Content Creator
+              p Branding
+              .button
+                a(href="#") VIEW
+                i.far.fa-chevron-right
+        .grid-item.gr-9
+          img(src="img/latest-works9.jpg", alt="book")
+          .grid-overlay
+            .grid-overlay-text-block
+              h6 Event Organiser
+              p Strategy
+              .button
+                a(href="#") VIEW
+                i.far.fa-chevron-right
   
   .latest-works-CTA
       h4 Do you like OUR WORK so far? Let's talk about YOUR PROJECT!
@@ -104,10 +167,10 @@ body
   .recent-blog-posts
       .container
         .top-text
-          h3 ABOUT US
+          h3 RECENT BLOG POSTS
           .line
           p We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
-        .blog-post.second
+        .blog-post.first
           .outside-flex-block-wrapper
             .flex-block-picture
               img(src="", alt="")
@@ -126,7 +189,7 @@ body
               .read-more-div
                 a(href="#")
         hr
-        .blog-post.first
+        .blog-post.second
           .outside-flex-block-wrapper
             .flex-block-picture
               img(src="", alt="")
@@ -163,7 +226,7 @@ body
   .get-in-touch
     .container
       .top-text
-        h3 ABOUT US
+        h3 GET IN TOUCH
         .line
         p We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
       .ouside-get-in-touch-wrapper
