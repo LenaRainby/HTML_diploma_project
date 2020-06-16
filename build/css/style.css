@@ -61,7 +61,7 @@ body {
         body .services .services-flex-block-wrapper .flex-block-item .circle-block {
           width: 90px;
           height: 90px;
-          border: 3px solid #dedede;
+          border: 2px solid #dedede;
           box-sizing: border-box;
           border-radius: 50%;
           margin: 0 auto 30px;
@@ -69,7 +69,7 @@ body {
           body .services .services-flex-block-wrapper .flex-block-item .circle-block i {
             font-size: 43px;
             color: #c0301c;
-            line-height: 84px; }
+            line-height: 86px; }
         body .services .services-flex-block-wrapper .flex-block-item .circle-block:hover {
           background-color: #c0301c; }
         body .services .services-flex-block-wrapper .flex-block-item .circle-block:hover i {
@@ -208,6 +208,45 @@ body {
         opacity: 0.7; }
       body .latest-works-CTA .latest-works-CTA-text-block .button:hover a {
         color: #000; }
+  body footer {
+    padding: 100px 0;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #c0301c;
+    color: #ffffff; }
+    body footer .footer-top-text {
+      margin-bottom: 0; }
+      body footer .footer-top-text .footer-icons-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
+        body footer .footer-top-text .footer-icons-wrapper .footer-icon-item {
+          width: 35px;
+          height: 35px;
+          box-sizing: border-box;
+          border-radius: 50%;
+          margin: 0 14px 30px 0;
+          cursor: pointer;
+          border: 2px solid #ffffff; }
+          body footer .footer-top-text .footer-icons-wrapper .footer-icon-item a {
+            color: #ffffff;
+            line-height: 31px; }
+        body footer .footer-top-text .footer-icons-wrapper .footer-icon-item:last-child {
+          margin-right: 0; }
+        body footer .footer-top-text .footer-icons-wrapper .footer-icon-item:hover {
+          background-color: #ffffff;
+          border-color: #ffffff; }
+        body footer .footer-top-text .footer-icons-wrapper .footer-icon-item:hover a {
+          color: #c0301c; }
+      body footer .footer-top-text .line {
+        background-color: #ffffff; }
+      body footer .footer-top-text .footer-bottom-text-wrapper {
+        font-size: 12px; }
+        body footer .footer-top-text .footer-bottom-text-wrapper span {
+          text-transform: uppercase;
+          font-family: 'Roboto Slab', serif;
+          line-height: 20px; }
 
 .top-text {
   margin: 0 0 70px 0;
