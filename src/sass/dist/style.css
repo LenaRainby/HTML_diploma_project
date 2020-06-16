@@ -10,6 +10,7 @@ body .home-section {
   width: 100%;
   margin: 0 auto;
   background: #6d0606 url(/img/home-section-background.png);
+  background-size: cover;
   color: #ffffff;
 }
 
@@ -51,6 +52,7 @@ body .home-section .banner .button {
   border: 2px solid #ffffff;
   margin: 0 auto;
   cursor: pointer;
+  border-radius: 1px;
 }
 
 body .home-section .banner .button a {
@@ -196,7 +198,6 @@ body .latest-works .grid-wrapper .grid-item .grid-overlay {
 body .latest-works .grid-wrapper .grid-item .grid-overlay .grid-overlay-text-block {
   color: #ffffff;
   text-align: center;
-  padding: 105px 0;
 }
 
 body .latest-works .grid-wrapper .grid-item .grid-overlay .grid-overlay-text-block h6 {
@@ -240,7 +241,73 @@ body .latest-works .grid-wrapper .grid-item .grid-overlay .grid-overlay-text-blo
 }
 
 body .latest-works .grid-wrapper .grid-item:hover .grid-overlay {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .latest-works-CTA {
+  position: relative;
+  padding: 100px 0;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  background: #750a0a url(/img/latest-works-CTA-background.png);
+  background-size: cover;
+}
+
+body .latest-works-CTA .latest-works-CTA-layout {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #c0301c;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+body .latest-works-CTA .latest-works-CTA-text-block {
+  text-align: center;
+  position: relative;
+  z-index: 30;
+}
+
+body .latest-works-CTA .latest-works-CTA-text-block h4 {
+  width: 468px;
+  margin: 0 auto 52px;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+  line-height: 44px;
+}
+
+body .latest-works-CTA .latest-works-CTA-text-block .button {
+  margin: 0 auto;
+  width: 180px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+body .latest-works-CTA .latest-works-CTA-text-block .button a {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  line-height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body .latest-works-CTA .latest-works-CTA-text-block .button:hover {
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+
+body .latest-works-CTA .latest-works-CTA-text-block .button:hover a {
+  color: #000;
 }
 
 .top-text {
