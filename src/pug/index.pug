@@ -11,21 +11,35 @@ head
   title My Diploma Project
 body
 
-  .home-section 
+  .home-section(id="home")
     .home-section-overlay
-    .container
+    .container-not-bootstrap
       .navigation
+        .container.p-0
+          nav(class="navbar navbar-expand-lg navbar-light p-0")
+            a(class="navbar-brand p-0" href="#") Startup
+            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation")
+              span(class="navbar-toggler-icon")
+            div(class="collapse navbar-collapse" id="navbarNavAltMarkup")
+              .navbar-nav
+                a(class="nav-item nav-link active p-0" href="#home") Home 
+                  span(class="sr-only") (current)
+                a(class="nav-item nav-link p-0" href="#services") Services
+                a(class="nav-item nav-link p-0" href="#about-us") About
+                a(class="nav-item nav-link p-0" href="#latest-works") Works
+                a(class="nav-item nav-link p-0" href="#recent-blog-posts") Blog
+                a(class="nav-item nav-link p-0" href="#clients") Clients
+                a(class="nav-item nav-link p-0" href="#get-in-touch") Contact
+        
       
-
-
       .banner
         h1 Welcome to STARTUP
         p Your Favourite Creative Agency Template
         .button 
           a(href="#") GET STARTED 
   
-  .services
-    .container
+  .services(id="services")
+    .container-not-bootstrap
       .top-text
         h3 SERVICES
         .line
@@ -47,8 +61,8 @@ body
           h5 Expert support
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
   
-  .about-us
-    .container
+  .about-us(id="about-us")
+    .container-not-bootstrap
       .top-text
         h3 ABOUT US
         .line
@@ -60,8 +74,8 @@ body
           p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Loreipsum dolor sit amet. Lorem ipsum dolor et.
       .carousel
 
-  .latest-works
-    .container
+  .latest-works(id="latest-works")
+    .container-not-bootstrap
       .top-text.top-text-modified
         h3 LATEST WORKS
         .line
@@ -167,8 +181,8 @@ body
       .button 
         a(href="#") GET IN TOUCH
 
-  .recent-blog-posts
-      .container
+  .recent-blog-posts(id="recent-blog-posts")
+      .container-not-bootstrap
         .top-text
           h3 RECENT BLOG POSTS
           .line
@@ -211,7 +225,7 @@ body
             .read-more-div
               a(href="#") READ MORE
   
-  .clients
+  .clients(id="clients")
     .clients-logo-wrapper
       .clients-logo-item
         img(src="img/clients1.png", alt="DEORHAM logo")
@@ -226,8 +240,8 @@ body
     
     .carousel
 
-  .get-in-touch
-    .container
+  .get-in-touch(id="get-in-touch")
+    .container-not-bootstrap
       .top-text
         h3 GET IN TOUCH
         .line

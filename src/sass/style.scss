@@ -13,6 +13,7 @@ body {
         background: rgb(109, 6, 6) url(/img/home-section-background.png);
         background-size: cover;
         color: #ffffff;
+        box-sizing: border-box;
         .home-section-overlay{
             background-color: #000000;
             position: absolute;
@@ -26,10 +27,43 @@ body {
             
         .navigation {
             z-index: 2;
+            position: relative;
+            padding-top: 30px;
+            .navbar{
+                margin-bottom:250px;
+                .navbar-brand{
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color:#ffffff;
+                }
+                .navbar-toggler{
+                    background-color: #ffffff;
+                    outline: none;
+                }
+                .collapse{
+                    justify-content: flex-end;
+                    .navbar-nav{
+                        a{
+                            text-decoration: none;
+                            color: #ffffff;
+                            line-height: 26px;
+                            margin: 0 30px 0 0;
+                            cursor: pointer;
+
+
+                        }
+                    }
+                    .navbar-nav a:hover{
+                        background-color: #999999;
+                    }
+
+                }
+            }
         }
         .banner{
             position: relative;
-            padding: 260px 0;
+            padding: 0 0 260px;
             text-align: center;
             z-index: 3;
             h1{
@@ -496,9 +530,29 @@ body {
     }
 }
 
-.container{
-    max-width:1140px;
+.container-not-bootstrap{
+    max-width: 1140px;
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
+}
+
+// Media Queries
+
+@media (max-width:991px){
+    .home-section{
+        .navigation{
+            .navbar-collapse{
+                .navbar-nav{
+                    background-color: #555555;
+                    opacity: 0.7;
+                    padding: 10px;
+                    a{
+                        margin-right: 0!important;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
