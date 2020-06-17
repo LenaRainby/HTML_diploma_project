@@ -197,11 +197,16 @@ body {
                                 line-height:28px;
                                 width: 28px;
                                 height: 28px;
+                                margin-right:5px;
                                 a{
                                     text-decoration: none;
                                     color:#ffffff;
                                 }
                             }
+                            .carousel-item-layout-icon:last-child{
+                                margin-right: 0;
+                            }
+
                             .carousel-item-layout-icon:hover{
                                 background-color: #c0301c;
                             }
