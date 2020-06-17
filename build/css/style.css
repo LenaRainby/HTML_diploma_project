@@ -118,6 +118,12 @@ body {
           width: 555px;
           margin: 0;
           font-family: 'Roboto Slab', serif; }
+    body .about-us .container .carousel-inner {
+      display: flex;
+      justify-content: space-between; }
+      body .about-us .container .carousel-inner .carousel-item {
+        display: flex;
+        justify-content: space-between; }
   body .latest-works {
     padding: 100px 0; }
     body .latest-works .top-text-modified .list-wrapper {
@@ -386,6 +392,8 @@ body {
             outline: none;
             border: 1px solid #555555;
             font-size: 12px; }
+          body .get-in-touch .outside-get-in-touch-wrapper form .form-wrapper .form-row .row-item input:hover {
+            border-color: #c0301c; }
         body .get-in-touch .outside-get-in-touch-wrapper form .form-wrapper .message textarea {
           font-family: 'Roboto Slab', serif;
           resize: none;
@@ -395,6 +403,8 @@ body {
           font-size: 12px;
           outline: none;
           border: 1px solid #555555; }
+        body .get-in-touch .outside-get-in-touch-wrapper form .form-wrapper .message textarea:hover {
+          border-color: #c0301c; }
         body .get-in-touch .outside-get-in-touch-wrapper form .form-wrapper .button-and-ps {
           font-size: 12px;
           font-family: 'Roboto Slab', serif; }
@@ -406,6 +416,9 @@ body {
             margin: 0 38px 0 0;
             background-color: #ffffff;
             color: #555555; }
+          body .get-in-touch .outside-get-in-touch-wrapper form .form-wrapper .button-and-ps button:hover {
+            border-color: #c0301c;
+            background-color: #dedede; }
           body .get-in-touch .outside-get-in-touch-wrapper form .form-wrapper .button-and-ps span {
             color: #c0301c; }
           body .get-in-touch .outside-get-in-touch-wrapper form .form-wrapper .button-and-ps p {
