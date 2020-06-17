@@ -165,13 +165,72 @@ body {
         }
 
         .container{
-            .carousel-inner{
-                display: flex;
-                justify-content: space-between;
-                .carousel-item{
+            .carousel-item-item{
+                .carousel-item-wrapper{
                     display: flex;
                     justify-content: space-between;
+                    .carouselt-item-one-picture{
+                        position: relative;
+                        cursor: pointer;
+                        .carousel-item-layout{
+                            background-color: #555555;
+                            opacity: 0.5;
+                            display:none;
+                            position: absolute;
+                            top:0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .carousel-item-layout-icons-wrapper{
+                            display:flex;
+                            justify-content: center;
+                            align-items: flex-end;
+                            position: absolute;
+                            bottom:28px;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 40;
+                            opacity:1;
+                            display:none;
+                            .carousel-item-layout-icon{
+                                text-align: center;
+                                line-height:28px;
+                                width: 28px;
+                                height: 28px;
+                                a{
+                                    text-decoration: none;
+                                    color:#ffffff;
+                                }
+                            }
+                            .carousel-item-layout-icon:hover{
+                                background-color: #c0301c;
+                            }
+                        }
+                    }
+                    .carouselt-item-one-picture:hover{
+                        .carousel-item-layout{
+                            display:block;
+                        }
+                        .carousel-item-layout-icons-wrapper{
+                            display:flex;
+                        }
+                    }
+                    
                 }
+            }
+            .carousel-control-left, .carousel-control-right{
+                width: 35px;
+                height: 38px;
+                font-size:18px;
+                top:50%;
+                transform: translateY(-50%);
+                background-color: #555555;
+                z-index:100;
+                opacity:0.2;
+            }
+            .carousel-control-left:hover, .carousel-control-right:hover{
+                background-color: #c0301c;
+                opacity: 1;
             }
         }
     }
@@ -277,7 +336,6 @@ body {
                 }
             }
         }
-
     }
 
     .latest-works-CTA{
@@ -514,7 +572,6 @@ body {
         padding: 100px 0;
         .outside-get-in-touch-wrapper{
             display:flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             .contacts-wrapper{
                 .contacts-item{
