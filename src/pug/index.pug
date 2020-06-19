@@ -12,14 +12,14 @@ head
 body
 
   .home-section(id="home")
-    .home-section-overlay
     .container-not-bootstrap
       .navigation
-        .container.p-0
+        .container.p-0.mx-0
           nav(class="navbar navbar-expand-lg navbar-light p-0")
-            a(class="navbar-brand p-0" href="#") Startup
-            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation")
-              span(class="navbar-toggler-icon")
+            .logo
+              a(class="navbar-brand p-0" href="#") Startup
+              button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation")
+                span(class="navbar-toggler-icon")
             div(class="collapse navbar-collapse" id="navbarNavAltMarkup")
               .navbar-nav
                 a(class="nav-item nav-link active p-0" href="#home") Home 
@@ -29,7 +29,7 @@ body
                 a(class="nav-item nav-link p-0" href="#latest-works") Works
                 a(class="nav-item nav-link p-0" href="#recent-blog-posts") Blog
                 a(class="nav-item nav-link p-0" href="#clients") Clients
-                a(class="nav-item nav-link p-0" href="#get-in-touch") Contact
+                a(class="nav-item nav-link p-0 mr-0" href="#get-in-touch") Contact
         
       
       .banner
@@ -78,268 +78,316 @@ body
           .carousel-inner
             .carousel-item.active.carousel-item-item
               .carousel-item-wrapper
-                .carouselt-item-one-picture
-                  img(src="img/about-us1.jpg" alt="First slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us2.jpg" alt="Second slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us3.jpg" alt="Third slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us4.jpg" alt="Forth slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us1.jpg" alt="First slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 Md. Khalil Uddin
+                  p Head of Ideas
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us2.jpg" alt="Second slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 Rubel Miah
+                  p Lead WordPress Developer
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us3.jpg" alt="Third slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 SHAMIM MIA
+                  p Sr. Web Developer
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us4.jpg" alt="Forth slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 JOHN DOE
+                  p Front-end Developer
             .carousel-item.carousel-item-item
               .carousel-item-wrapper
-                .carouselt-item-one-picture
-                  img(src="img/about-us2.jpg" alt="First slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us3.jpg" alt="Second slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us4.jpg" alt="Third slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us1.jpg" alt="Forth slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us2.jpg" alt="Second slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 Rubel Miah
+                  p Lead WordPress Developer
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us3.jpg" alt="Third slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 SHAMIM MIA
+                  p Sr. Web Developer
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us4.jpg" alt="Forth slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 JOHN DOE
+                  p Front-end Developer
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us1.jpg" alt="First slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 Md. Khalil Uddin
+                  p Head of Ideas
             .carousel-item.carousel-item-item
               .carousel-item-wrapper
-                .carouselt-item-one-picture
-                  img(src="img/about-us3.jpg" alt="First slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us4.jpg" alt="Second slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us1.jpg" alt="Third slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us2.jpg" alt="Forth slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us3.jpg" alt="Third slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 SHAMIM MIA
+                  p Sr. Web Developer
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us4.jpg" alt="Forth slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 JOHN DOE
+                  p Front-end Developer
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us1.jpg" alt="First slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 Md. Khalil Uddin
+                  p Head of Ideas
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us2.jpg" alt="Second slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 Rubel Miah
+                  p Lead WordPress Developer
             .carousel-item.carousel-item-item
               .carousel-item-wrapper
-                .carouselt-item-one-picture
-                  img(src="img/about-us4.jpg" alt="First slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us1.jpg" alt="Second slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us2.jpg" alt="Third slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
-                .carouselt-item-one-picture
-                  img(src="img/about-us3.jpg" alt="Forth slide")
-                  .carousel-item-layout
-                  .carousel-item-layout-icons-wrapper
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-facebook-f
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-twitter
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-google-plus-g
-                    .carousel-item-layout-icon
-                      a(href="#")
-                        i.fab.fa-linkedin-in
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us4.jpg" alt="Forth slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 JOHN DOE
+                  p Front-end Developer
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us1.jpg" alt="First slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 Md. Khalil Uddin
+                  p Head of Ideas
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us2.jpg" alt="Second slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 Rubel Miah
+                  p Lead WordPress Developer
+                .carousel-item-one-picture
+                  .carousel-item-one-picture-img
+                    img(src="img/about-us3.jpg" alt="Third slide")
+                    .carousel-item-layout
+                    .carousel-item-layout-icons-wrapper
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-facebook-f
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-twitter
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-google-plus-g
+                      .carousel-item-layout-icon
+                        a(href="#")
+                          i.fab.fa-linkedin-in
+                  h5 SHAMIM MIA
+                  p Sr. Web Developer
           a(class="carousel-control-prev carousel-control-left" href="#carouselExampleIndicators" role="button" data-slide="prev")
             i.fas.fa-chevron-left
           a(class="carousel-control-next carousel-control-right" href="#carouselExampleIndicators" role="button" data-slide="next")
@@ -553,15 +601,20 @@ body
               i.fas.fa-mobile-alt
             .contacts-item-text
               h5 HOTLINE (24x7)
-              p +65 0052 300, +65 88251 210 
-              p +88 01723 511 340
+              .contacts-item-link
+                a(href="tel:+650052300") +65 0052 300, 
+                a(href="tel:+6588251210") +65 88251 210 
+              .contacts-item-link
+                a(href="tel:+8801723511340") +88 01723 511 340
           .contacts-item
             .contactis-item-icon
               i.far.fa-envelope
             .contacts-item-text
               h5 E-MAIL
-              p shapedtheme@gmail.com 
-              p khalilkode@gmail.com
+              .contacts-item-link
+                a(href="mailto: shapedtheme@gmail.com") shapedtheme@gmail.com 
+              .contacts-item-link
+                a(href="mailto: khalilkode@gmail.com") khalilkode@gmail.com
        
         form(action="#")
           .form-wrapper
